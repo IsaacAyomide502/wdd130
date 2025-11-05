@@ -26,14 +26,22 @@ aside{
 }
 
 aside img{
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 main img{
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;  
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+h1 {
+  color: #2c3e50;
+}
+
 
 p{padding: 0;}
 
