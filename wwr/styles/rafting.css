@@ -1,4 +1,4 @@
-/* ========== RESET ========== */
+/* ========== UNIVERSAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +7,9 @@
 
 /* ========== VARIABLES ========== */
 :root {
-  --primary-color: #004d40;
-  --accent1-color: #00796b;
-  --accent2-color: #ffffff;
+  --primary-color: #004d40;      /* rgb(0, 77, 64) */
+  --accent1-color: #00796b;      /* rgb(0, 121, 107) */
+  --accent2-color: #ffffff;      /* rgb(255, 255, 255) */
   --heading-font: 'Georgia', serif;
   --body-font: 'Arial', sans-serif;
 }
