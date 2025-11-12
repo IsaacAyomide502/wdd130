@@ -1,3 +1,10 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ========== VARIABLES ========== */
 :root {
   --primary-color: #004d40;
@@ -5,13 +12,6 @@
   --accent2-color: #ffffff;
   --heading-font: 'Georgia', serif;
   --body-font: 'Arial', sans-serif;
-}
-
-/* ========== RESET ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* ========== BASE STYLES ========== */
@@ -41,10 +41,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 8px 0;
 }
 
 header img {
   width: 120px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent1-color);
 }
 
 /* ========== HERO SECTION ========== */
@@ -84,6 +96,7 @@ header img {
   width: 125px;
   margin-left: 10px;
   border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ========== FOOTER ========== */
@@ -94,6 +107,10 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+footer p {
+  color: var(--primary-color);
+}
+
 .socialmedia a {
   text-decoration: none;
   margin: 0 5px;
@@ -102,4 +119,5 @@ footer {
 .socialmedia img {
   width: 24px;
   height: 24px;
+  vertical-align: middle;
 }
