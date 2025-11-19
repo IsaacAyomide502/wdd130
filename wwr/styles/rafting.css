@@ -106,9 +106,9 @@ header nav a:hover {
 }
 
 .hero article img {
-  float: none;
-  width: 125px;
-  margin-left: 16px;
+  float: right;
+  width: 200px;
+  margin-left: 20px;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
