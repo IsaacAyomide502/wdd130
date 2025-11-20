@@ -8,9 +8,17 @@
 }
 
 /* ===========================
+    CSS VARIABLES (REQUIRED)
+=========================== */
+:root {
+    --primary-color: #004aad;
+    --accent-color: #ffb703;
+    --text-light: #ffffff;
+}
+
+/* ===========================
     BASIC PAGE STYLING
 =========================== */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -21,7 +29,6 @@ body {
 /* ===========================
     HEADER SECTION
 =========================== */
-
 header {
     background: #003366;
     padding: 10px;
@@ -47,11 +54,10 @@ nav a:hover {
 }
 
 /* ===========================
-    HERO SECTION
+    HERO SECTION (REQUIRED)
 =========================== */
-
 .hero {
-    position: relative;
+    position: relative;            /* REQUIRED */
     text-align: center;
     padding: 20px;
 }
@@ -64,33 +70,35 @@ nav a:hover {
 }
 
 .hero h1 {
-    margin-top: 20px;
-    font-size: 2.2rem;
-    color: #003366;
+    position: absolute;            /* REQUIRED */
+    top: 20px;
+    left: 20px;
+    color: var(--text-light);
+    font-size: 2.5rem;
 }
 
-/* Article inside hero */
 .hero article {
-    margin-top: 20px;
-    padding: 15px;
-    background: #fff;
-    border-left: 4px solid #003366;
-    min-height: 150px;
+    position: absolute;            /* REQUIRED */
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
+    color: var(--text-light);
+    border-radius: 6px;
 }
 
-/* REQUIRED: Float image right */
 .hero article img {
-    float: right;
+    float: right;                  /* REQUIRED */
     width: 200px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 1rem;
     border-radius: 6px;
 }
 
 /* ===========================
     MAIN SECTION STYLING
 =========================== */
-
 main {
     width: 90%;
     max-width: 1100px;
@@ -121,7 +129,6 @@ section img {
 /* ===========================
     ADVENTURE GALLERY
 =========================== */
-
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -150,7 +157,6 @@ figcaption {
 /* ===========================
     FOOTER
 =========================== */
-
 footer {
     background: #003366;
     color: white;
