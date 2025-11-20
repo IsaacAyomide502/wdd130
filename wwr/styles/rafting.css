@@ -30,7 +30,7 @@ body {
     HEADER SECTION
 =========================== */
 header {
-    background: #003366;
+    background: var(--primary-color);
     padding: 10px;
     color: white;
     display: flex;
@@ -78,13 +78,14 @@ nav a:hover {
 }
 
 .hero article {
-    position: absolute;            /* REQUIRED */
+    position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background-color: rgba(0,0,0,0.5);
     padding: 1rem;
     color: var(--text-light);
+    border-left: 4px solid var(--accent-color);
     border-radius: 6px;
 }
 
@@ -111,7 +112,7 @@ section {
 
 section h2 {
     margin-bottom: 15px;
-    color: #003366;
+    color: var(--primary-color);
     font-size: 1.8rem;
 }
 
